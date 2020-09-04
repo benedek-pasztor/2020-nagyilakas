@@ -5,8 +5,10 @@ library(reshape2)
 library(janitor)
 
 ####### Links load
-## 2281-ig vannak 
-for (i in 1:2281){
+k <- 2281 ## 2281 pg - hardcode :()
+
+
+for (i in 1:k){
   l <- paste0("https://ingatlan.com/budapest/elado+lakas?page=", i) %>% 
     read_html() %>% 
     html_nodes('.listing__link.js-listing-active-area') %>%

@@ -1,0 +1,796 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0125.0835                               -->
+<workbook source-build='2019.4.3 (20194.20.0125.0835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data_dashboard_v1' inline='true' name='federated.11vudxh0foope310txo101d12qnc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_dashboard_v1' name='textscan.1hkqwin09pt82i17iw1v70o65ap2'>
+            <connection class='textscan' directory='C:/Users/Benedek Pasztor/Documents/R-Projects/2020/2020-nagyilakas/clean' filename='data_dashboard_v1.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.500998' measure-ordering='alphabetic' measure-percentage='0.499002' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Hungary&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='data_dashboard_v1 (2)' inline='true' name='federated.07w4yrj1cu9bjh11zp06d0n26i9r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_dashboard_v1' name='textscan.1xu2qy41rwi0o31eccah41xocopx'>
+            <connection class='textscan' directory='C:/Users/Benedek Pasztor/Documents/R-Projects/2020/2020-nagyilakas/clean' filename='data_dashboard_v1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xu2qy41rwi0o31eccah41xocopx' name='data_dashboard_v1.csv' table='[data_dashboard_v1#csv]' type='table'>
+          <columns character-set='ISO_8859-2:1987' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='ar_millio' ordinal='0' />
+            <column datatype='integer' name='alapterulet_m' ordinal='1' />
+            <column datatype='real' name='szobak_n' ordinal='2' />
+            <column datatype='string' name='cim' ordinal='3' />
+            <column datatype='string' name='ingatlan_allapota' ordinal='4' />
+            <column datatype='string' name='epites_eve' ordinal='5' />
+            <column datatype='string' name='komfort' ordinal='6' />
+            <column datatype='string' name='energiatanusitvany' ordinal='7' />
+            <column datatype='string' name='emelet' ordinal='8' />
+            <column datatype='string' name='epulet_szintjei' ordinal='9' />
+            <column datatype='string' name='lift' ordinal='10' />
+            <column datatype='string' name='belmagassag' ordinal='11' />
+            <column datatype='string' name='futes' ordinal='12' />
+            <column datatype='string' name='legkondicionalo' ordinal='13' />
+            <column datatype='string' name='rezsikoltseg' ordinal='14' />
+            <column datatype='string' name='akadalymentesitett' ordinal='15' />
+            <column datatype='string' name='furdo_es_wc' ordinal='16' />
+            <column datatype='string' name='tajolas' ordinal='17' />
+            <column datatype='string' name='kilatas' ordinal='18' />
+            <column datatype='string' name='erkely' ordinal='19' />
+            <column datatype='string' name='kertkapcsolatos' ordinal='20' />
+            <column datatype='string' name='tetoter' ordinal='21' />
+            <column datatype='string' name='parkolas' ordinal='22' />
+            <column datatype='string' name='lakopark_neve' ordinal='23' />
+            <column datatype='string' name='parkolohely_ara' ordinal='24' />
+            <column datatype='string' name='panelprogram' ordinal='25' />
+            <column datatype='real' name='ar_negyzetmeter' ordinal='26' />
+            <column datatype='real' name='latitude' ordinal='27' />
+            <column datatype='real' name='longitude' ordinal='28' />
+            <column datatype='real' name='tavolsag_varoskozpont' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ISO_8859-2:1987&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ar_millio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ar_millio]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>ar_millio</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alapterulet_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alapterulet_m]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>alapterulet_m</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>szobak_n</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[szobak_n]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>szobak_n</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cim</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cim]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>cim</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ingatlan_allapota</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ingatlan_allapota]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>ingatlan_allapota</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>epites_eve</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[epites_eve]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>epites_eve</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>komfort</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[komfort]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>komfort</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>energiatanusitvany</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[energiatanusitvany]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>energiatanusitvany</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emelet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[emelet]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>emelet</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>epulet_szintjei</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[epulet_szintjei]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>epulet_szintjei</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lift</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lift]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>lift</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>belmagassag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[belmagassag]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>belmagassag</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>futes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[futes]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>futes</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legkondicionalo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[legkondicionalo]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>legkondicionalo</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rezsikoltseg</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rezsikoltseg]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>rezsikoltseg</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>akadalymentesitett</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[akadalymentesitett]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>akadalymentesitett</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>furdo_es_wc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[furdo_es_wc]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>furdo_es_wc</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tajolas</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tajolas]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>tajolas</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kilatas</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kilatas]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>kilatas</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>erkely</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[erkely]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>erkely</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kertkapcsolatos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kertkapcsolatos]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>kertkapcsolatos</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tetoter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tetoter]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>tetoter</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parkolas</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[parkolas]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>parkolas</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lakopark_neve</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lakopark_neve]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>lakopark_neve</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parkolohely_ara</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[parkolohely_ara]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>parkolohely_ara</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>panelprogram</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[panelprogram]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>panelprogram</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ar_negyzetmeter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ar_negyzetmeter]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>ar_negyzetmeter</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tavolsag_varoskozpont</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tavolsag_varoskozpont]</local-name>
+            <parent-name>[data_dashboard_v1.csv]</parent-name>
+            <remote-alias>tavolsag_varoskozpont</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Negyzetemeter Ar' datatype='real' name='[Calculation_926052693534490624]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[alapterulet_m] / [ar_millio]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Akadalymentesitett' datatype='string' name='[akadalymentesitett]' role='dimension' type='nominal' />
+      <column caption='Alapterulet M' datatype='integer' name='[alapterulet_m]' role='measure' type='quantitative' />
+      <column caption='Ar Millio' datatype='real' name='[ar_millio]' role='measure' type='quantitative' />
+      <column caption='Ar Negyzetmeter' datatype='real' name='[ar_negyzetmeter]' role='measure' type='quantitative' />
+      <column caption='Belmagassag' datatype='string' name='[belmagassag]' role='dimension' type='nominal' />
+      <column caption='Cim' datatype='string' name='[cim]' role='dimension' type='nominal' />
+      <column caption='Emelet' datatype='string' name='[emelet]' role='dimension' type='nominal' />
+      <column caption='Energiatanusitvany' datatype='string' name='[energiatanusitvany]' role='dimension' type='nominal' />
+      <column caption='Epites Eve' datatype='string' name='[epites_eve]' role='dimension' type='nominal' />
+      <column caption='Epulet Szintjei' datatype='string' name='[epulet_szintjei]' role='dimension' type='nominal' />
+      <column caption='Erkely' datatype='string' name='[erkely]' role='dimension' type='nominal' />
+      <column caption='Furdo Es Wc' datatype='string' name='[furdo_es_wc]' role='dimension' type='nominal' />
+      <column caption='Futes' datatype='string' name='[futes]' role='dimension' type='nominal' />
+      <column caption='Ingatlan Allapota' datatype='string' name='[ingatlan_allapota]' role='dimension' type='nominal' />
+      <column caption='Kertkapcsolatos' datatype='string' name='[kertkapcsolatos]' role='dimension' type='nominal' />
+      <column caption='Kilatas' datatype='string' name='[kilatas]' role='dimension' type='nominal' />
+      <column caption='Komfort' datatype='string' name='[komfort]' role='dimension' type='nominal' />
+      <column caption='Lakopark Neve' datatype='string' name='[lakopark_neve]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Legkondicionalo' datatype='string' name='[legkondicionalo]' role='dimension' type='nominal' />
+      <column caption='Lift' datatype='string' name='[lift]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Panelprogram' datatype='string' name='[panelprogram]' role='dimension' type='nominal' />
+      <column caption='Parkolas' datatype='string' name='[parkolas]' role='dimension' type='nominal' />
+      <column caption='Parkolohely Ara' datatype='string' name='[parkolohely_ara]' role='dimension' type='nominal' />
+      <column caption='Rezsikoltseg' datatype='string' name='[rezsikoltseg]' role='dimension' type='nominal' />
+      <column caption='Szobak N' datatype='real' name='[szobak_n]' role='measure' type='quantitative' />
+      <column caption='Tajolas' datatype='string' name='[tajolas]' role='dimension' type='nominal' />
+      <column caption='Tavolsag Varoskozpont' datatype='real' name='[tavolsag_varoskozpont]' role='dimension' type='ordinal' />
+      <column caption='Tetoter' datatype='string' name='[tetoter]' role='dimension' type='nominal' />
+      <column-instance column='[ar_negyzetmeter]' derivation='None' name='[none:ar_negyzetmeter:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tavolsag_varoskozpont]' derivation='None' name='[none:tavolsag_varoskozpont:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Ar Negyzetmeter,Tavolsag Varoskozpont)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:ar_negyzetmeter:qk]' />
+          <groupfilter function='level-members' level='[none:tavolsag_varoskozpont:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Latitude,Longitude)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:latitude:qk]' />
+          <groupfilter function='level-members' level='[none:longitude:qk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.750499' measure-ordering='alphabetic' measure-percentage='0.249501' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Hungary&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_dashboard_v1 (2)' name='federated.07w4yrj1cu9bjh11zp06d0n26i9r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07w4yrj1cu9bjh11zp06d0n26i9r'>
+            <column caption='Ar Negyzetmeter' datatype='real' name='[ar_negyzetmeter]' role='measure' type='quantitative' />
+            <column caption='Ingatlan Allapota' datatype='string' name='[ingatlan_allapota]' role='dimension' type='nominal' />
+            <column-instance column='[ar_negyzetmeter]' derivation='None' name='[none:ar_negyzetmeter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ingatlan_allapota]' derivation='None' name='[none:ingatlan_allapota:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tavolsag_varoskozpont]' derivation='None' name='[none:tavolsag_varoskozpont:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[tavolsag_varoskozpont]' derivation='None' name='[none:tavolsag_varoskozpont:qk]' pivot='key' type='quantitative' />
+            <column caption='Tavolsag Varoskozpont' datatype='real' name='[tavolsag_varoskozpont]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[Exclusions (Ar Negyzetmeter,Tavolsag Varoskozpont)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:ar_negyzetmeter:qk]' />
+                <groupfilter function='level-members' level='[none:tavolsag_varoskozpont:qk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='union'>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:tavolsag_varoskozpont:qk]' member='631311.48482540005' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.81343750000000004' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.85060000000000002' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.98346938775510195' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.99265625000000002' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='1.0297674418604701' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='1.15382352941176' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='1.167' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:tavolsag_varoskozpont:qk]' member='631569.84002871602' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.499' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='1.38026315789474' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='1.41333333333333' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:tavolsag_varoskozpont:qk]' member='7137059.9259342495' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.55697674418604604' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.65714285714285703' />
+                      <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='0.68245614035087698' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:tavolsag_varoskozpont:qk]' member='8270057.5323652802' />
+                    <groupfilter function='member' level='[none:ar_negyzetmeter:qk]' member='1.18157894736842' />
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:ar_negyzetmeter:qk]' />
+                  <hierarchy name='[none:tavolsag_varoskozpont:qk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:tavolsag_varoskozpont:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:tavolsag_varoskozpont:nk]' />
+              <groupfilter function='member' level='[none:tavolsag_varoskozpont:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:tavolsag_varoskozpont:nk]</column>
+            <column>[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[Exclusions (Ar Negyzetmeter,Tavolsag Varoskozpont)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:ingatlan_allapota:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.16392265260219574' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:ar_negyzetmeter:qk]</rows>
+        <cols>[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:tavolsag_varoskozpont:qk]</cols>
+      </table>
+      <simple-id uuid='{6C899575-5910-4DAF-AE82-5F888CF7F647}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_dashboard_v1 (2)' name='federated.07w4yrj1cu9bjh11zp06d0n26i9r' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.07w4yrj1cu9bjh11zp06d0n26i9r'>
+            <column caption='Negyzetemeter Ar' datatype='real' name='[Calculation_926052693534490624]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[alapterulet_m] / [ar_millio]' />
+            </column>
+            <column caption='Alapterulet M' datatype='integer' name='[alapterulet_m]' role='measure' type='quantitative' />
+            <column caption='Ar Millio' datatype='real' name='[ar_millio]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_926052693534490624]' derivation='Attribute' name='[attr:Calculation_926052693534490624:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[Exclusions (Latitude,Longitude)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:latitude:qk]' />
+                <groupfilter function='level-members' level='[none:longitude:qk]' />
+              </groupfilter>
+              <groupfilter function='union'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:latitude:qk]' member='33.713678999999999' />
+                  <groupfilter function='member' level='[none:longitude:qk]' member='-85.222634999999997' />
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:latitude:qk]' member='42.696358650000001' />
+                  <groupfilter function='member' level='[none:longitude:qk]' member='23.327045843460201' />
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:latitude:qk]' member='42.698775349999998' />
+                  <groupfilter function='member' level='[none:longitude:qk]' member='23.326397700000001' />
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:latitude:qk]' member='43.636879499999999' />
+                  <groupfilter function='member' level='[none:longitude:qk]' member='-79.448075399999993' />
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:latitude:qk]' member='48.069228799999998' />
+                  <groupfilter function='member' level='[none:longitude:qk]' member='19.625523099999999' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[Exclusions (Latitude,Longitude)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:longitude:qk]' field-type='quantitative' max='2126123.0239132494' min='2107721.4887775565' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:latitude:qk]' field-type='quantitative' max='6031633.9782970641' min='6019153.3638603818' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[attr:Calculation_926052693534490624:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:latitude:qk]</rows>
+        <cols>[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{A23829CE-6E23-4F30-901E-730048037D7D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[none:ingatlan_allapota:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F454C320-69AA-4699-9124-33F4C4138F96}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.07w4yrj1cu9bjh11zp06d0n26i9r].[attr:Calculation_926052693534490624:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{0750122B-15A0-4384-9A32-F2C70BBE66EA}' />
+    </window>
+  </windows>
+</workbook>
