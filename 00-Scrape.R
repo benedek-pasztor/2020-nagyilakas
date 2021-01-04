@@ -5,25 +5,28 @@ library(reshape2)
 library(janitor)
 
 ####### Links load
-k <- 2281 ## 2281 pg - hardcode :()
+k <- 2281 * 2 ## 2281 pg - hardcode :()
+k
 
-
-for (i in 1:k){
+for (i in 2282:k){
   l <- paste0("https://ingatlan.com/budapest/elado+lakas?page=", i) %>% 
     read_html() %>% 
     html_nodes('.listing__link.js-listing-active-area') %>%
     html_attr('href') %>% 
     as.data.frame()
   
+  print("Successful scraping")
+  
   l <- l %>% 
     mutate(id = 1:nrow(l)) %>%  
     melt(id = c("id")) %>% 
     select("http" = "value")
   
+  print("Successful mutation")
+  
   write.table(l, paste0("raw/links/", i, ".csv"))
   
 }
-
 
 ############# Utilizing raw/links/ .csv-s
 
@@ -79,7 +82,7 @@ func_scrape <- function(pg){
 }
   
 
-for (rawlinks_id in 87:2267){
+for (rawlinks_id in 1:2000){
   links <- read.table(paste0("raw/links/", rawlinks_id, ".csv"), stringsAsFactors = F)
   
   draw <- data.frame()
